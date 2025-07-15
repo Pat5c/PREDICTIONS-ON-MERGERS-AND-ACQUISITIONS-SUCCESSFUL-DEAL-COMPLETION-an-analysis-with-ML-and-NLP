@@ -37,8 +37,67 @@ By analyzing both numerical (financial) and textual (news) datasets, this projec
 - **NLP Tools:** `VADER`, `TextBlob`, `NLTK`, `spaCy`
 - **EDA & Viz:** `pandas`, `matplotlib`, `seaborn`, `plotly`
 - **Model Evaluation:** Precision, Recall, F1-Score, Accuracy
+  
+---
+
+## Methodology Overview
+
+### 📊 Financial Data Pipeline:
+- Dimensionality reduction using:
+  - Pearson correlation
+  - Spearman rank
+  - T-test and filtering methods
+- Classification models used:
+  - Logistic Regression (Baseline)
+  - Random Forest
+  - Decision Tree
+  - Neural Networks
+  - Support Vector Machine (SVM)
+
+### 📰 Textual Data (News/Headlines Pre-Deal):
+- Cleaned and tokenized headlines.
+- Sentiment Analysis using:
+  - VADER
+  - TextBlob
+- Sentiment scores evaluated:
+  - With share price run-ups
+  - Integrated into financial dataset
 
 ---
+
+## Key Research Questions
+
+1. Can models like SVM or Random Forest outperform Logistic Regression in predicting M&A deal success?
+2. Which financial variables most influence M&A success prediction?
+3. Can pre-deal sentiment signals + price trends predict imminent M&A announcements?
+4. Does combining sentiment scores with financial features improve prediction accuracy?
+
+---
+
+## Results Summary
+
+### ✅ Best Performing Models (Financial Only):
+- **Random Forest**, **SVM**, and **Decision Tree** outperformed Logistic Regression.
+- All achieved **100% Precision, Recall, F1, and Accuracy**.
+- Logistic Regression scored slightly lower in all metrics.
+
+### 💬 Sentiment Analysis Results:
+- Rumor-driven headlines linked to significant share price run-ups pre-announcement.
+- VADER and TextBlob effectively captured sentiment dynamics.
+- Hypothesis confirmed: **High prices + low positive sentiment** → Strong signal for imminent M&A.
+
+  <img width="380" height="250" alt="image" src="https://github.com/user-attachments/assets/11717f2b-3d29-4399-8c03-07f6b6b89b9f" />
+
+
+### 🧪 Combined (NLP + Financial):
+- Sentiment scores **did not degrade** model performance.
+- Models like Random Forest and Decision Tree retained 100% metrics.
+- No statistically significant improvement, but strong evidence for **complementary predictive signals**.
+
+<img width="465" height="178" alt="image" src="https://github.com/user-attachments/assets/b5652324-6bef-42c8-9d0f-d58b0c3b32b0" />
+
+---
+
 ## Table of Contents
 
 DEDICATION
@@ -114,68 +173,10 @@ APPENDICES
   Appendix C: METHODOLOGY I – Models with No sentiment scores 
   
   Appendix D: METHODOLOGY II – Models with sentiment score
-  
----
-
-## Methodology Overview
-
-### 📊 Financial Data Pipeline:
-- Dimensionality reduction using:
-  - Pearson correlation
-  - Spearman rank
-  - T-test and filtering methods
-- Classification models used:
-  - Logistic Regression (Baseline)
-  - Random Forest
-  - Decision Tree
-  - Neural Networks
-  - Support Vector Machine (SVM)
-
-### 📰 Textual Data (News/Headlines Pre-Deal):
-- Cleaned and tokenized headlines.
-- Sentiment Analysis using:
-  - VADER
-  - TextBlob
-- Sentiment scores evaluated:
-  - With share price run-ups
-  - Integrated into financial dataset
 
 ---
 
-## Key Research Questions
+## THANK YOU!
 
-1. Can models like SVM or Random Forest outperform Logistic Regression in predicting M&A deal success?
-2. Which financial variables most influence M&A success prediction?
-3. Can pre-deal sentiment signals + price trends predict imminent M&A announcements?
-4. Does combining sentiment scores with financial features improve prediction accuracy?
-
----
-
-## Results Summary
-
-### ✅ Best Performing Models (Financial Only):
-- **Random Forest**, **SVM**, and **Decision Tree** outperformed Logistic Regression.
-- All achieved **100% Precision, Recall, F1, and Accuracy**.
-- Logistic Regression scored slightly lower in all metrics.
-
-### 💬 Sentiment Analysis Results:
-- Rumor-driven headlines linked to significant share price run-ups pre-announcement.
-- VADER and TextBlob effectively captured sentiment dynamics.
-- Hypothesis confirmed: **High prices + low positive sentiment** → Strong signal for imminent M&A.
-
-  <img width="380" height="250" alt="image" src="https://github.com/user-attachments/assets/11717f2b-3d29-4399-8c03-07f6b6b89b9f" />
-
-
-### 🧪 Combined (NLP + Financial):
-- Sentiment scores **did not degrade** model performance.
-- Models like Random Forest and Decision Tree retained 100% metrics.
-- No statistically significant improvement, but strong evidence for **complementary predictive signals**.
-
-<img width="465" height="178" alt="image" src="https://github.com/user-attachments/assets/b5652324-6bef-42c8-9d0f-d58b0c3b32b0" />
-
----
-
-THANK YOU!
-
-If you find this project interesting, feel free to connect on LinkedIn.
+If you find this project interesting, feel free to connect on LinkedIn at: www.linkedin.com/in/patience-buxton-msc.
 
