@@ -1,10 +1,14 @@
-# 🤖 Predicting M&A Deal Completion Using Machine Learning and NLP
+# Predicting M&A Deal Completion Using Machine Learning and NLP
 
-A data science project that applies **machine learning (ML)** and **natural language processing (NLP)** to predict the successful completion of **Mergers & Acquisitions (M&A)** deals. This work explores risk arbitrage strategies by integrating structured financial data and unstructured textual sentiment extracted from headlines and news before deal announcements.
+A Data Science project that applies **Machine Learning (ML)** and **Natural Language Processing (NLP)** to predict the successful completion of **Mergers & Acquisitions (M&A)** deals. This work explores risk arbitrage strategies by integrating structured financial data and unstructured textual sentiment extracted from headlines and news before deal announcements: by combining structured financial datasets with sentiment analysis of pre-announcement headlines and rumors, I developed a hybrid model that improves forecasting accuracy for M&A deal outcomes.
+
+![MandA_Picture](https://github.com/user-attachments/assets/ce849b0b-2364-43b5-9cad-b83642528e54)
+
+
 
 ---
 
-## 🧠 Project Objectives
+## Project Objectives
 
 This project aims to:
 
@@ -15,7 +19,7 @@ This project aims to:
 
 ---
 
-## 🏦 Background & Motivation
+## Background & Motivation
 
 M&A deals play a major role in financial markets, yet misclassifying an unsuccessful deal as successful can lead to significant losses for arbitrageurs and investors. 
 
@@ -26,7 +30,7 @@ By analyzing both numerical (financial) and textual (news) datasets, this projec
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 - **Languages:** Python
 - **ML Libraries:** `scikit-learn`, `xgboost`, `keras`
@@ -36,7 +40,7 @@ By analyzing both numerical (financial) and textual (news) datasets, this projec
 
 ---
 
-## 🧪 Methodology Overview
+## Methodology Overview
 
 ### 📊 Financial Data Pipeline:
 - Dimensionality reduction using:
@@ -61,7 +65,7 @@ By analyzing both numerical (financial) and textual (news) datasets, this projec
 
 ---
 
-## 🔍 Key Research Questions
+## Key Research Questions
 
 1. Can models like SVM or Random Forest outperform Logistic Regression in predicting M&A deal success?
 2. Which financial variables most influence M&A success prediction?
@@ -70,7 +74,7 @@ By analyzing both numerical (financial) and textual (news) datasets, this projec
 
 ---
 
-## 📈 Results Summary
+## Results Summary
 
 ### ✅ Best Performing Models (Financial Only):
 - **Random Forest**, **SVM**, and **Decision Tree** outperformed Logistic Regression.
@@ -88,4 +92,8 @@ By analyzing both numerical (financial) and textual (news) datasets, this projec
 - No statistically significant improvement, but strong evidence for **complementary predictive signals**.
 
 ---
+
+THANK YOU!
+
+If you find this project interesting, feel free to connect on LinkedIn.
 
