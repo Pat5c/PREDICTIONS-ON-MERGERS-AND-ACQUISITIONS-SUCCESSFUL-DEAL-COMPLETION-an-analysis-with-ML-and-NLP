@@ -39,6 +39,83 @@ By analyzing both numerical (financial) and textual (news) datasets, this projec
 - **Model Evaluation:** Precision, Recall, F1-Score, Accuracy
 
 ---
+## Table of Contents
+
+DEDICATION
+
+ACKNOWLEDGMENTS
+
+ABSTRACT
+
+TABLE OF CONTENTS
+
+LIST OF TABLES
+
+LIST OF FIGURES
+
+LIST OF ABBREVIATIONS
+
+CHAPTER 1 - INTRODUCTION
+
+Introduction  
+
+  Research rationale, aims and objectives 
+  
+  Dissertation structure 
+  
+CHAPTER 2 - BACKGROUND LITERATURE
+
+DATASETS
+
+  Data Pre-Processing and Cleaning
+  
+  Variables selection 
+  
+RESULTS & EVALUATION - Second research question answered
+
+CHAPTER 3 - METHODOLOGIES
+
+METHODOLOGY 1 – Models with No sentiment scores 
+
+  Baseline model: Logistic Regression 
+  
+  Other classification models 
+  
+  Models’ evaluation metrics 
+  
+RESULTS & EVALUATION – First research question answered 
+
+METHODOLOGY II – Models with sentiment score 
+
+  Sentiment analysis with TextBlob: Baseline Model
+  
+  Sentiment analysis with VADER
+  
+Approach A: Share price with sentiment scores
+
+  RESULTS & EVALUATION – Third research question answered 
+  
+Approach B: Financial dataset with sentiment scores 
+
+  RESULTS & EVALUATION – Fourth and last research question answered 
+  
+CONCLUSIONS
+
+FURTHER WORK
+
+REFERENCES 
+
+APPENDICES
+
+  Appendix A: Datasets Processing & Cleaning Code 
+  
+  Appendix B: Variables Selection
+  
+  Appendix C: METHODOLOGY I – Models with No sentiment scores 
+  
+  Appendix D: METHODOLOGY II – Models with sentiment score
+  
+---
 
 ## Methodology Overview
 
@@ -86,10 +163,15 @@ By analyzing both numerical (financial) and textual (news) datasets, this projec
 - VADER and TextBlob effectively captured sentiment dynamics.
 - Hypothesis confirmed: **High prices + low positive sentiment** → Strong signal for imminent M&A.
 
+  <img width="380" height="250" alt="image" src="https://github.com/user-attachments/assets/11717f2b-3d29-4399-8c03-07f6b6b89b9f" />
+
+
 ### 🧪 Combined (NLP + Financial):
 - Sentiment scores **did not degrade** model performance.
 - Models like Random Forest and Decision Tree retained 100% metrics.
 - No statistically significant improvement, but strong evidence for **complementary predictive signals**.
+
+<img width="465" height="178" alt="image" src="https://github.com/user-attachments/assets/b5652324-6bef-42c8-9d0f-d58b0c3b32b0" />
 
 ---
 
